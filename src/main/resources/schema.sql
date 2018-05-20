@@ -125,5 +125,6 @@ CREATE TABLE IF NOT EXISTS QUOTES (
   close numeric (18,5) NOT NULL,
   high numeric (18,5) NOT NULL,
   low numeric (18,5) NOT NULL,
-  data DATETIME NOT NULL
+  period VARCHAR(20) NOT NULL,
+  data timestamp NOT NULL
 );
