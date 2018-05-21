@@ -1,7 +1,6 @@
 package com.service;
 
-import com.dim.fxapp.entity.Quotes;
-import com.repository.Repository;
+import com.repository.MondoQuotesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,5 +10,5 @@ import org.springframework.stereotype.Service;
 @Service
 public class QuoteService {
     @Autowired
-    Repository<Quotes> repository;
+    MondoQuotesRepository repository;
 }
