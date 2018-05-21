@@ -1,1 +1,1 @@
-curl -i -X POST -H "Content-Type:application/json" -d "{\"id\":\"1\",\"close\":\"1.125\",\"currency\":\"AUDUSD\",\"period\":\"FIVETEENMINUTES\",\"open\":\"1.125\",\"high\":\"1.125\",\"low\":\"1.125\",\"data\":\"2012-04-23 18:25\"}" http://localhost:9097/quotes
+curl -i -X POST -H "Content-Type:application/json" -d "{\"close\":\"1.125\",\"currency\":\"AUDUSD\",\"period\":\"FIVETEENMINUTES\",\"open\":\"1.125\",\"high\":\"1.125\",\"low\":\"1.125\",\"data\":\"2012-04-23 18:25\"}" http://localhost:9097/quotes
