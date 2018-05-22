@@ -12,6 +12,9 @@ eureka:
     healthcheck:
       enabled: true
     registerWithEureka: true
+  instance:
+      metadataMap:
+        instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}
 
 
 #security:
