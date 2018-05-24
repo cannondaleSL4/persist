@@ -11,6 +11,6 @@ import java.util.List;
  * Created by dima on 21.05.18.
  */
 @RepositoryRestResource(collectionResourceRel = "quotes", path = "quotes")
-public interface MondoQuotesRepository extends MongoRepository<Quotes,Integer> {
+public interface MongoQuotesRepository extends MongoRepository<Quotes,Integer> {
     List<Quotes> findByCurrency(@Param("name") String currency);
 }
