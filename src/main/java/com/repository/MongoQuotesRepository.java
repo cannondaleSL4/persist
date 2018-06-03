@@ -19,10 +19,17 @@ public interface MongoQuotesRepository extends MongoRepository<Quotes,Integer> {
     List<Quotes> findByCurrencyAndPeriodAndData(@Param("currencyname") String currency,
                                                 @Param("period")String period,
                                                 @Param("data") @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm") LocalDateTime data);
+
+    List<Quotes> findByCurrencyAndPeriodAndDataBetween (@Param("currencyname") String currency,
+                                                        @Param("period")String period,
+                                                        @Param("from") @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm") LocalDateTime from,
+                                                        @Param("to") @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm") LocalDateTime to);
 }
 
 
 //http://localhost:9097/quotes/search/findByCurrencyAndPeriod?currencyname=EURUSD&period=15
 
 //http://localhost:9097/quotes/search/findByCurrencyAndPeriodAndData?currencyname=EURUSD&period=15&data=2018-05-27%2022:15
-// %20 - it's space for httprequest
+// %20 - it's space for http request
+
+// http://localhost:9097/quotes/search/findByCurrencyAndPeriodAndDataBetween?currencyname=EURUSD&period=15&from=2018-05-27%2000:00&to=2018-05-28%2000:00
