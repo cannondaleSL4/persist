@@ -16,13 +16,5 @@ public class PersistApplications {
         SpringApplication.run(PersistApplications.class, args) ;
     }
 
-//    @Bean
-//    public CommonsRequestLoggingFilter requestLoggingFilter() {
-//        CommonsRequestLoggingFilter loggingFilter = new CommonsRequestLoggingFilter();
-//        loggingFilter.setIncludeClientInfo(true);
-//        loggingFilter.setIncludeQueryString(true);
-//        loggingFilter.setIncludePayload(true);
-//        return loggingFilter;
-//    }
 }
 
