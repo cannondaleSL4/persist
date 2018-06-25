@@ -41,6 +41,7 @@ target/
 /coverage
 /libpeerconnection.log
 *.log
+*.gz
 /typings
 
 # e2e
