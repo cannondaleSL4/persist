@@ -6,11 +6,12 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.math.BigInteger;
 import java.time.LocalDateTime;
 import java.util.List;
 
 @RepositoryRestResource(collectionResourceRel = "/quotes", path = "/quotes")
-public interface MongoQuotesRepository extends MongoRepository<Quotes,Integer> {
+public interface MongoQuotesRepository extends MongoRepository<Quotes,BigInteger> {
     List<Quotes> findByCurrency(@Param("currencyname") String currency);
 
     List<Quotes> findByCurrencyAndPeriod(@Param("currencyname") String currency,
