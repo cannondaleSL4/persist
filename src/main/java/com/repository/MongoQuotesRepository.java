@@ -24,6 +24,7 @@ public interface MongoQuotesRepository extends MongoRepository<Quotes,Integer> {
                                                         @Param("period")String period,
                                                         @Param("from") @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm") LocalDateTime from,
                                                         @Param("to") @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm") LocalDateTime to);
+
 }
 
 //http://localhost:9097/quotes/search/findByCurrencyAndPeriod?currencyname=EURUSD&period=15
