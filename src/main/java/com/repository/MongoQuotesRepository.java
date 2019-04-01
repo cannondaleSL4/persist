@@ -27,7 +27,7 @@ public interface MongoQuotesRepository extends MongoRepository<Quotes,Integer> {
 
 }
 
-//FIVETEENMINUTES
+////http://localhost:9097/quotes/search/findByCurrencyAndPeriod?currencyname=AUDUSD&period=FIVETEENMINUTES
 
 //http://localhost:9097/quotes/search/findByCurrencyAndPeriodAndData?currencyname=EURUSD&period=15&data=2018-05-27%2022:15
 // %20 - it's space for http request

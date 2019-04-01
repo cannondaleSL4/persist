@@ -39,5 +39,4 @@ public class QuotesSimpleMongoRepository extends SimpleMongoRepository<Quotes, I
         return optionalQuotes.isPresent() ?
                 (T) mongoOperations.findOne(query,Quotes.class) : super.save(entity);
     }
-
 }

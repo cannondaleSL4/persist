@@ -5,6 +5,8 @@ spring:
   application:
     name: persist
 
+logging.level.org.springframework.web: DEBUG
+
 eureka:
   client:
     serviceUrl:
