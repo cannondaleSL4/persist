@@ -5,7 +5,10 @@ spring:
   application:
     name: persist
 
-logging.level.org.springframework.web: INFO
+logging.level.org:
+  springframework.web: DEBUG
+  hibernate: ERROR
+  apache.http: INFO
 
 eureka:
   client:
